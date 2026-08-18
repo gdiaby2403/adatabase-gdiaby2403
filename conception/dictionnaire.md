@@ -29,3 +29,5 @@
 | DateAtelier | date de l'atelier | Date | | | |
 | DureeAtelier| Duree de l'atelier | Numerique | | | |
 | NbrePlace | Nombre de place de l'atelier | Numerique | | | |
+| Inscription |
+|CompetenceBenevole|

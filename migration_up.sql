@@ -51,7 +51,7 @@ CREATE TABLE atelier (
     libelle VARCHAR(50) NOT NULL UNIQUE,
     date_atelier DATE NOT NULL,
     places INTEGER NOT NULL,
-    duree NUMERIC(3,1) NOT NULL
+    duree NUMERIC(3,2) NOT NULL
 );
 
 CREATE TABLE competence_benevole (
@@ -85,7 +85,7 @@ CREATE TABLE reparation (
     benevole_id INTEGER NOT NULL REFERENCES benevole(id),
     objet_id INTEGER NOT NULL REFERENCES objet(id),
     date_debut DATE NOT NULL,
-    duree NUMERIC(5,2) NOT NULL,
+    duree NUMERIC(4,2) NOT NULL,
     resultat resultat_reparation NOT NULL
 );
 

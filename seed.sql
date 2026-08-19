@@ -57,10 +57,10 @@ INSERT INTO categorie (id, libelle) VALUES
 (8, 'Loisirs');
 
 INSERT INTO atelier (id, benevole_id, libelle, date_atelier, places, duree) VALUES
-(1, 11, 'répare ton vélo', '2026-01-25', 10, 3.0),
-(2, 6, 'initiation couture', '2024-05-14', 12, 2.5),
-(3, 9, 'ma première bouture', '2023-09-20', 15, 2.0),
-(4, 2, 'déclic numérique', '2025-11-08', 10, 2.0);
+(1, 11, 'répare ton vélo', '2026-01-25', 10, 3.00),
+(2, 6, 'initiation couture', '2024-05-14', 12, 2.50),
+(3, 9, 'ma première bouture', '2023-09-20', 15, 2.00),
+(4, 2, 'déclic numérique', '2025-11-08', 10, 2.00);
 
 
 INSERT INTO objet (id, depot_id, categorie_id, libelle, poids, etat, statut, prix, vente_id) VALUES
@@ -132,18 +132,18 @@ INSERT INTO inscription (id, personne_id, atelier_id, date_inscription, presence
 (23, 5, 1, '2026-01-18', true);
 
 INSERT INTO reparation (id, benevole_id, objet_id, date_debut, duree, resultat) VALUES
-(1, 11, 3, '2026-02-14', 2.5, 'reussi'),
-(2, 2, 12, '2024-08-10', 1.5, 'echouer'),
-(3, 7, 15, '2023-11-20', 3.0, 'echouer'),
-(4, 2, 19, '2024-01-15', 2.0, 'reussi'),
-(5, 4, 24, '2023-05-04', 1.0, 'reussi'),
-(6, 4, 7, '2022-10-12', 4.0, 'echouer'),
-(7, 2, 7, '2022-11-05', 2.5, 'echouer'),
-(8, 7, 28, '2024-03-22', 0.5, 'reussi'),
-(9, 11, 25, '2024-11-05', 2.0, 'echouer'),
-(10, 4, 6, '2024-07-10', 1.0, 'reussi'),
-(11, 11, 11, '2026-02-01', 3.5, 'reussi'),
-(12, 11, 12, '2024-09-02', 1.0, 'reussi'),
-(13, 11, 15, '2025-01-20', 2.0, 'reussi'),
-(14, 2, 33, '2023-06-11', 3.0, 'reussi'),
-(15, 4, 17, '2023-03-10', 1.5, 'echouer');
+(1, 11, 3, '2026-02-14', 2.50, 'reussi'),
+(2, 2, 12, '2024-08-10', 1.50, 'echouer'),
+(3, 7, 15, '2023-11-20', 3.00, 'echouer'),
+(4, 2, 19, '2024-01-15', 2.25, 'reussi'),
+(5, 4, 24, '2023-05-04', 1.00, 'reussi'),
+(6, 4, 7, '2022-10-12', 4.00, 'echouer'),
+(7, 2, 7, '2022-11-05', 2.50, 'echouer'),
+(8, 7, 28, '2024-03-22', 0.50, 'reussi'),
+(9, 11, 25, '2024-11-05', 2.00, 'echouer'),
+(10, 4, 6, '2024-07-10', 1.00, 'reussi'),
+(11, 11, 11, '2026-02-01', 3.50, 'reussi'),
+(12, 11, 12, '2024-09-02', 1.75, 'reussi'),
+(13, 11, 15, '2025-01-20', 2.00, 'reussi'),
+(14, 2, 33, '2023-06-11', 3.00, 'reussi'),
+(15, 4, 17, '2023-03-10', 1.50, 'echouer');

@@ -9,7 +9,7 @@ CREATE TYPE mode_paiement AS ENUM ('especes', 'carte', 'cheque');
 CREATE TABLE personne (
     id SERIAL PRIMARY KEY,
     prenom VARCHAR(50) NOT NULL,
-    telephone INTEGER NOT NULL,
+    telephone VARCHAR(50) NOT NULL,
     adherent BOOLEAN DEFAULT false
 );
 
@@ -29,7 +29,7 @@ CREATE TABLE competence (
 CREATE TABLE vente (
     id SERIAL PRIMARY KEY,
     date_vente DATE NOT NULL ,
-    prix_vente NUMERIC(10,2) NOT NULL,
+    prix_vente NUMERIC(7,2) NOT NULL,
     mode_paiement mode_paiement  NOT NULL
 );
 
@@ -51,7 +51,7 @@ CREATE TABLE atelier (
     libelle VARCHAR(50) NOT NULL UNIQUE,
     date_atelier DATE NOT NULL,
     places INTEGER NOT NULL,
-    duree INTEGER NOT NULL
+    duree NUMERIC(3,1) NOT NULL
 );
 
 CREATE TABLE competence_benevole (
@@ -67,7 +67,8 @@ CREATE TABLE objet (
     libelle VARCHAR(50) NOT NULL,
     poids INTEGER NOT NULL,
     etat etat_arrivee NOT NULL ,
-    prix NUMERIC(10,2),
+    statut statut_objet NOT NULL,
+    prix NUMERIC(7,2),
     vente_id INTEGER REFERENCES vente(id)
 );
 
@@ -84,7 +85,7 @@ CREATE TABLE reparation (
     benevole_id INTEGER NOT NULL REFERENCES benevole(id),
     objet_id INTEGER NOT NULL REFERENCES objet(id),
     date_debut DATE NOT NULL,
-    duree INTEGER NOT NULL,
+    duree NUMERIC(5,2) NOT NULL,
     resultat resultat_reparation NOT NULL
 );
 

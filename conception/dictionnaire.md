@@ -20,7 +20,7 @@
 | Resultat | Si une réparation est réussi ou non | Enum | | | deux états : réussi ou échoué |
 | NomBenevole | Nom du bénévole | Texte | 50 | Obligatoire | |
 | PrenomBenevole | Prenom du bénévole | Texte | 50 | Obligatoire | |
-| Telephone | Numero de telephone du benevole | Numerique | | Obligatoire | |
+| Telephone | Numero de telephone du benevole | Texte | | Obligatoire | |
 | Adresse | Adresse du benevole | Texte | 50 | Obligatoire | |
 | Mail | Adresse mail du bénévole | Texte | 50 | | |
 | DateArrive | date à laquelle le bénévole a rejoint l'association | Date | | Obligatoire | |

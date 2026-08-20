@@ -1,5 +1,3 @@
-/*vérifier si not null nécessaire pour les Foreign Key*/
-
 CREATE TYPE type_depot AS ENUM ('depot en boutique', 'collecte a domicile');
 CREATE TYPE etat_arrivee AS ENUM ('bon etat', 'a reparer', 'hors-service');
 CREATE TYPE statut_objet AS ENUM ('arrivee', 'en reparation', 'en rayon', 'vendu', 'recyclé');
@@ -51,7 +49,7 @@ CREATE TABLE atelier (
     libelle VARCHAR(50) NOT NULL UNIQUE,
     date_atelier DATE NOT NULL,
     places INTEGER NOT NULL,
-    duree NUMERIC(3,2) NOT NULL
+    duree NUMERIC(4,2) NOT NULL
 );
 
 CREATE TABLE competence_benevole (
@@ -65,14 +63,15 @@ CREATE TABLE objet (
     depot_id INTEGER NOT NULL REFERENCES depot(id),
     categorie_id INTEGER NOT NULL REFERENCES categorie(id),
     libelle VARCHAR(50) NOT NULL,
-    poids INTEGER NOT NULL,
+    poids NUMERIC(5,2) NOT NULL,
     etat etat_arrivee NOT NULL ,
     statut statut_objet NOT NULL,
     prix NUMERIC(7,2),
+    date_mise_en_rayon DATE,
     vente_id INTEGER REFERENCES vente(id)
 );
 
-CREATE TABLE incription (
+CREATE TABLE inscription (
     personne_id INTEGER NOT NULL REFERENCES personne(id),
     atelier_id INTEGER NOT NULL REFERENCES atelier(id),
     date_inscription DATE NOT NULL,
@@ -88,7 +87,6 @@ CREATE TABLE reparation (
     duree NUMERIC(4,2) NOT NULL,
     resultat resultat_reparation NOT NULL
 );
-
 
 
 

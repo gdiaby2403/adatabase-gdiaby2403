@@ -26,7 +26,7 @@
 | DateArrive | date à laquelle le bénévole a rejoint l'association | Date | | Obligatoire | |
 | LibelleCompetence | libelle de la competence | Texte | 50 | Obligatoire | |
 | LibelleAtelier | intituler de l'atelier | Texte | 50 | Obligatoire | |
-| DateAtelier | date de l'atelier | Date | | | |
+| DateAtelier | date de l'atelier | Date | | Obligatoire| |
 | DureeAtelier| Duree de l'atelier | Numerique | | | |
 | NbrePlace | Nombre de place de l'atelier | Numerique | | | |
 | Inscription |

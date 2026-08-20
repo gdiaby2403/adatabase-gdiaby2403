@@ -37,10 +37,10 @@ GROUP BY benevole_id;
 
 -- Q6 Quelles personnes nous ont fait plus de trois dépôts ?
 
-SELECT p.prenom, COUNT(personne_id) AS "nombre_depots"
+SELECT p.nom, COUNT(personne_id) AS "nombre_depots"
 FROM depot d
 JOIN personne p ON p.id = d.personne_id
-GROUP BY p.prenom, personne_id
+GROUP BY p.nom, personne_id
 HAVING COUNT(personne_id) > 3;
 
 

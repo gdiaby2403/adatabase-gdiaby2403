@@ -1,14 +1,14 @@
-Objet(<b>numEtiquette<b>,#idCategorie,#idVente,#idDepot, libelle, poids, etatArrive, prix)
+Objet(<b>numEtiquette<b>,#idCategorie,#idVente,#idDepot, libelle, poids, etatArrive, statut, prix, dateMiseEnRayon)
 
 Categorie(<b>id,libelle )
 
-Depot(<b>id<b>, #idPersonne,type, date)
+Depot(<b>id<b>, #idPersonne,typeDepot, dateDepot)
 
-Vente (<b>id<b>, date, prixVente, modePaiement)
+Vente (<b>id<b>, dateVente, prixVente, modePaiement)
 
-Personne(<b>id<b>, nom, prenom, adresse, telephone, adherent)
+Personne(<b>id<b>, nom, telephone, adherent)
 
-Atelier(<b>id<b>, #idBenevole, libelle, date, duree, places )
+Atelier(<b>id<b>, #idBenevole, libelle, dateAteleir, duree, places )
 
 Inscription((<b>#idPersonne,#idAtelier)<b>, dateInscription, presenceAtelier)
 

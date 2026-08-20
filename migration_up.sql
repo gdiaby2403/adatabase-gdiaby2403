@@ -6,7 +6,7 @@ CREATE TYPE mode_paiement AS ENUM ('especes', 'carte', 'cheque');
 
 CREATE TABLE personne (
     id SERIAL PRIMARY KEY,
-    prenom VARCHAR(50) NOT NULL,
+    nom VARCHAR(50) NOT NULL,
     telephone VARCHAR(50) NOT NULL,
     adherent BOOLEAN DEFAULT false
 );

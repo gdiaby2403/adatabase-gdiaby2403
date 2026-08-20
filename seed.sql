@@ -1,17 +1,17 @@
-INSERT INTO personne (id, prenom, telephone, adherent) VALUES
-(1, 'Sabrina', '06-87-34-21-03', true),
-(2, 'Jean-Mich', '06-98-76-54-32', false),
-(3, 'Ousmane', '07-53-93-80-11', true ),
-(4, 'Penelope', '06-10-30-40-50', true ),
-(5, 'Naya','07-70-24-20-24', true ),
-(6, 'Audrey', '07-29-82-03-84',false),
-(7, 'Jules', '07-53-93-80-11', false ),
-(8, 'Kei', '06-32-95-86-62', true),
-(9, 'Carole', '06-55-17-43-24', true),
-(10, 'Marco', '06-13-28-37-51', false);
+INSERT INTO personne (id, nom, telephone, adherent) VALUES
+(1, 'Moreau', '06-87-34-21-03', true),
+(2, 'Lefebvre', '06-98-76-54-32', false),
+(3, 'Traoré', '07-53-93-80-11', true),
+(4, 'Bernard', '06-10-30-40-50', true),
+(5, 'Petit', '07-70-24-20-24', true),
+(6, 'Roux', '07-29-82-03-84', false),
+(7, 'Girard', '07-53-93-80-11', false),
+(8, 'Sato', '06-32-95-86-62', true),
+(9, 'Dupont', '06-55-17-43-24', true),
+(10, 'Rossi', '06-13-28-37-51', false);
 
 INSERT INTO benevole (id, nom, prenom, date_arrive) VALUES
-(1, 'Broux', 'Morgane', '2021-04-24'),
+(1, 'Mich', 'Jean', '2021-04-24'),
 (2, 'Taro', 'Samuel', '2019-01-13'),
 (3, 'Faye', 'Omar', '2022-09-11'),
 (4, 'Valdez', 'Maria', '2022-05-07'),
